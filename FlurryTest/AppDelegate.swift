@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Flurry_iOS_SDK
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Flurry.startSession("25F7G2V3ZCF3XM3KJWDP");
+
         return true
     }
 

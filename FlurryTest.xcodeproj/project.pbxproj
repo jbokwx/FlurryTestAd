@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B72034C1B7A8AADF94532115 /* Pods_FlurryTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589CC77A4E99F3B144C895B5 /* Pods_FlurryTest.framework */; };
 		BF5ED89B1D5CADD100FDE554 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5ED89A1D5CADD100FDE554 /* AppDelegate.swift */; };
 		BF5ED89D1D5CADD100FDE554 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5ED89C1D5CADD100FDE554 /* ViewController.swift */; };
 		BF5ED8A01D5CADD100FDE554 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5ED89E1D5CADD100FDE554 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		589CC77A4E99F3B144C895B5 /* Pods_FlurryTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlurryTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		686497FCDA2198F8CA704C74 /* Pods-FlurryTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlurryTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlurryTest/Pods-FlurryTest.debug.xcconfig"; sourceTree = "<group>"; };
+		B8988EFDF520180D44A3E116 /* Pods-FlurryTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlurryTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlurryTest/Pods-FlurryTest.release.xcconfig"; sourceTree = "<group>"; };
 		BF5ED8971D5CADD100FDE554 /* FlurryTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlurryTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5ED89A1D5CADD100FDE554 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF5ED89C1D5CADD100FDE554 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B72034C1B7A8AADF94532115 /* Pods_FlurryTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		437E9088309B4AF1A376BFEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				686497FCDA2198F8CA704C74 /* Pods-FlurryTest.debug.xcconfig */,
+				B8988EFDF520180D44A3E116 /* Pods-FlurryTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9AAB498BD953B622BFEA6897 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				589CC77A4E99F3B144C895B5 /* Pods_FlurryTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BF5ED88E1D5CADD100FDE554 = {
 			isa = PBXGroup;
 			children = (
 				BF5ED8991D5CADD100FDE554 /* FlurryTest */,
 				BF5ED8981D5CADD100FDE554 /* Products */,
+				437E9088309B4AF1A376BFEE /* Pods */,
+				9AAB498BD953B622BFEA6897 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF5ED8A91D5CADD100FDE554 /* Build configuration list for PBXNativeTarget "FlurryTest" */;
 			buildPhases = (
+				8EE2A1C04D7D471C26D28400 /* [CP] Check Pods Manifest.lock */,
 				BF5ED8931D5CADD100FDE554 /* Sources */,
 				BF5ED8941D5CADD100FDE554 /* Frameworks */,
 				BF5ED8951D5CADD100FDE554 /* Resources */,
+				6FD69627B6A247D208E4928E /* [CP] Embed Pods Frameworks */,
+				E90F467D1D8ADE6DE835DC6F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6FD69627B6A247D208E4928E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlurryTest/Pods-FlurryTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EE2A1C04D7D471C26D28400 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E90F467D1D8ADE6DE835DC6F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlurryTest/Pods-FlurryTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BF5ED8931D5CADD100FDE554 /* Sources */ = {
@@ -247,6 +322,7 @@
 		};
 		BF5ED8AA1D5CADD100FDE554 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 686497FCDA2198F8CA704C74 /* Pods-FlurryTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FlurryTest/Info.plist;
@@ -258,6 +334,7 @@
 		};
 		BF5ED8AB1D5CADD100FDE554 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8988EFDF520180D44A3E116 /* Pods-FlurryTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FlurryTest/Info.plist;
@@ -286,6 +363,7 @@
 				BF5ED8AB1D5CADD100FDE554 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
